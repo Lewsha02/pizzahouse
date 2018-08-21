@@ -1,0 +1,130 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.main-header
+		.menu
+			&_list
+				li
+					&:first-child
+						display: none
+					a
+						padding-right: 13px
+
+	.header-slider
+		&_text
+			.h1
+				font-size: 46px
+
+	.salat-slider
+		.owl-nav
+			.owl-prev
+				left: -25px
+			.owl-next
+				right: -25px
+
+// ≥992px
++media-breakpoint-down(md)
+	.main-header
+		.col-xl-7
+			display: none
+
+	.header-slider
+		&_text
+			.h1
+				font-size: 38px
+
+	.pizza
+		text-align: center
+		margin-bottom: 70px
+		&_img
+			display: inline-block
+			width: 50%
+
+	.button-wrapper
+		.button__choose
+			margin-left: -85px
+
+	.salat
+		.button-wrapper
+			text-align: center
+
+	.salat-slider
+		.owl-nav
+			.owl-prev
+				left: -6px
+			.owl-next
+				right: -6px
+
+	.bottle
+		.button-wrapper
+			.button__choose
+				padding: 15px 20px
+
+	.about-company
+		margin-bottom: 80px
+
+	.order
+		margin-bottom: 80px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.pizza
+		&_img
+			width: 80%
+
+	.header-slider
+		text-align: center
+		&_text
+			.h1
+				line-height: 38px
+			&__descr
+				margin: 15px 0
+		&_img
+			margin-top: 15px
+			img
+				width: 70% !important
+				display: inline-block !important
+
+// ≥576px
++media-breakpoint-down(xs)
+	.logo
+		&_text
+			margin-left: 7px
+
+	.pizza
+		&_img
+			width: 100%
+
+	.bill
+		padding: 0
+		&_list
+			&_item
+				font-size: 13px
+				&::before
+					font-size: 20px
+		&_price
+			font-size: 20px
+			#final-price
+				font-size: 28px
+
+	.gallery
+		margin-bottom: 80px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
